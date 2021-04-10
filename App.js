@@ -19,11 +19,9 @@ const App: () => Node = () => {
       <StatusBar barStyle="dark-content" hidden />
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Home" headerMode="screen">
-          <Stack.Screen
-            name="Home"
-            component={Home}
-            options={{headerShown: false}}
-          />
+          <Stack.Screen name="Home" options={{headerShown: false}}>
+            {props => <Home {...props} username="Sports Dude2" />}
+          </Stack.Screen>
         </Stack.Navigator>
       </NavigationContainer>
     </>
