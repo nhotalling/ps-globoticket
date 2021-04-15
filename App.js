@@ -1,10 +1,10 @@
-// gesture handler should be first
 import 'react-native-gesture-handler';
+
 import React from 'react';
 import type {Node} from 'react';
 import {StatusBar} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation';
+import {createStackNavigator} from '@react-navigation/stack';
 import Home from './home';
 
 // all views in the app will be inside the NavigationContainer
