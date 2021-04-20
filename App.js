@@ -9,6 +9,7 @@ import Home from './Home';
 import Tickets from './Tickets';
 import Contact from './Contact';
 import TicketPurchase from './TicketPurchase';
+import News from './News';
 
 // all views in the app will be inside the NavigationContainer
 // StackedNavigator allows you to transition between screens of app
@@ -49,6 +50,15 @@ const App: () => Node = () => {
               headerTitleAlign: 'center',
               headerTitleStyle: { fontFamily: 'Ubuntu-Regular' },
               headerTitle: 'Purchase Tickets',
+            }}
+          />
+          <Stack.Screen
+            name="News"
+            component={News}
+            options={{
+              headerTitleAlign: 'center',
+              headerTitleStyle: { fontFamily: 'Ubuntu-Regular' },
+              headerTitle: 'Latest News',
             }}
           />
         </Stack.Navigator>
